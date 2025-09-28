@@ -4,7 +4,7 @@
   "outputDirectory": "web/.next",
   "functions": {
     "web/**": {
-      "runtime": "nodejs22.x"
+      "runtime": "nodejs18.x"
     }
   },
   "routes": [
