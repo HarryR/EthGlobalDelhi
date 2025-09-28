@@ -1,5 +1,16 @@
 {
   "installCommand": "npx pnpm@10 install --frozen-lockfile --engine-strict=false",
   "buildCommand": "npx pnpm@10 --filter web build",
-  "outputDirectory": "web/.next"
+  "outputDirectory": "web/.next",
+  "functions": {
+    "web/**": {
+      "runtime": "nodejs22.x"
+    }
+  },
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/web/$1"
+    }
+  ]
 }
