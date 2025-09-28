@@ -1,0 +1,5 @@
+{
+  "installCommand": "npx pnpm@10 install --frozen-lockfile --engine-strict=false",
+  "buildCommand": "npx pnpm@10 --filter web build",
+  "outputDirectory": "web/.next"
+}
